@@ -131,21 +131,21 @@
 
 // async-await
 
-// const p1=new Promise((resolve,reject)=>{
-//   setTimeout(()=>{
+// const p1=()=>{
+//     return new Promise((resolve,reject)=>{
 //     let val=Math.random();
-//     if(2 > 0.5) resolve(`Promise p1 has been resolved with value: ${val}`);
-//     else reject(new Error(`Promise p1 has been rejected with value: ${val}`))
-//   }, 2000)
+//     if(val>0.5) return resolve('P1 Resolved with value: '+val);
+//     else return reject(new Error('P1 Rejected with value: '+val))
 // })
+// }
 
-// const p2=new Promise((resolve,reject)=>{
-//   setTimeout(()=>{
+// const p2=()=>{
+//     return new Promise((resolve,reject)=>{
 //     let val=Math.random();
-//     if(0.2 > 0.5) resolve(`Promise p2 has been resolved with value: ${val}`);
-//     else reject(new Error(`Promise p2 has been rejected with value: ${val}`))
-//   }, 2000)
+//     if(val>0.5) return resolve('P2 Resolved with value: '+val);
+//     else return reject(new Error('P2 Rejected with value: '+val))
 // })
+// }
 
 // const func1=async(p1,p2)=>{
 //   try {
